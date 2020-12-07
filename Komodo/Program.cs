@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevTeamsProject
+namespace KomodoConsole
 {
-    public class Developer
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }
