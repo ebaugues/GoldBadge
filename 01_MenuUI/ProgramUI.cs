@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using _01_CafeRepo;
+using System.Text;
+using System.Threading.Tasks;
+using Komodo;
 
-namespace KomodoConsole
+namespace _01_MenuUI
 {
     class ProgramUI
     {
-       private MenuRepo _menuItemDirectory = new MenuRepo();
+        //private StreamingContentRepository _contentRepo = new StreamingContentRepository();
+        private MenuRepo _menuItemDirectory = new MenuRepo();
 
         //Method that runs/starts the appliaction
         public void Run()
@@ -107,7 +110,7 @@ namespace KomodoConsole
             //Menu Item Ingredients
             Console.WriteLine("Enter the Ingredients for the new Menu Item");
             List<string> ingredients = new List<string>();
-            
+
             //loop until user hits exit
             bool keepRunning2 = true;
             while (keepRunning2)
@@ -181,7 +184,7 @@ namespace KomodoConsole
                     Console.WriteLine("No ingredient entered.");
 
                 }
-                
+
             }
 
         }
@@ -345,7 +348,7 @@ namespace KomodoConsole
         }
 
 
-        
+
         //View All Menu Items 
         private void ViewAllMenuItems()
         {
@@ -385,7 +388,7 @@ namespace KomodoConsole
         }
 
 
-        
+
 
 
 
@@ -396,7 +399,7 @@ namespace KomodoConsole
             List<string> newIngredients = new List<String> { "Hamburger Meat", "Bacon", "Swiss Cheese", "Lettuce", "Tomato", "Pickle", "Ketchup", "Mayo" };
             Menu hamburger = new Menu(1, "Bacon Cheeseburger", "Hamburger with swiss cheese and bacon.", newIngredients, 10.99);
 
-            List<string> newIngredients2 = new List<String> { "Chicken", "Gravy", "Onions", "Carrots", "Chives"};
+            List<string> newIngredients2 = new List<String> { "Chicken", "Gravy", "Onions", "Carrots", "Chives" };
             Menu potpie = new Menu(2, "Chicken Pot Pie", "Classic chicken pot pie.", newIngredients2, 8.99);
 
             List<string> newIngredients3 = new List<String> { "Breaded Tenderlion", "Lettuce", "Tomato", "Pickle", "Onion", "Mayo" };
@@ -405,7 +408,7 @@ namespace KomodoConsole
             _menuItemDirectory.AddMenuToLists(hamburger);
             _menuItemDirectory.AddMenuToLists(potpie);
             _menuItemDirectory.AddMenuToLists(tenderlion);
-           
+
         }
 
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Komodo
+namespace _01_CafeRepo
 {
     public class MenuRepo
     {
@@ -25,7 +25,7 @@ namespace Komodo
         }
 
         //Menu Update
-        public bool UpdateExistingMenu(int  menuNumber, Menu NewMenu)
+        public bool UpdateExistingMenu(int menuNumber, Menu NewMenu)
         {
             //Find Content
             Menu OldMenu = GetMenuItemById(menuNumber);
@@ -34,7 +34,7 @@ namespace Komodo
             //Update Content
             if (OldMenu != null)  //Check content was returned
             {
-                OldMenu.MealName = NewMenu.MealName; 
+                OldMenu.MealName = NewMenu.MealName;
                 OldMenu.MealPrice = NewMenu.MealPrice;
                 OldMenu.Description = NewMenu.Description;
                 OldMenu.Ingredents = NewMenu.Ingredents;

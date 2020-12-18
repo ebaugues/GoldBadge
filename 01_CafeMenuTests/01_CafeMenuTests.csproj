@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90092810-B42B-4C86-8B62-B6E4B105DE16}</ProjectGuid>
+    <ProjectGuid>{5381898D-3FD5-4939-88D3-91987BF1B4F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_02_InsuranceTest</RootNamespace>
-    <AssemblyName>02_InsuranceTest</AssemblyName>
+    <RootNamespace>_01_CafeMenuTests</RootNamespace>
+    <AssemblyName>01_CafeMenuTests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,20 +49,19 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InsuranceTestsCreate.cs" />
+    <Compile Include="CreateMenuTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="InsuranceTestsDelete.cs" />
-    <Compile Include="InsuranceTestSet.cs" />
-    <Compile Include="InsuranceTestsGet.cs" />
-    <Compile Include="InsuranceTestsUpdate.cs" />
+    <Compile Include="RemoveMenuTest.cs" />
+    <Compile Include="GetMenuTest.cs" />
+    <Compile Include="UpdateMenuTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\02_KomodoInsurance\02_KomodoInsurance.csproj">
-      <Project>{e00b03dc-4afe-4aed-b99a-a246b745cba2}</Project>
-      <Name>02_KomodoInsurance</Name>
+    <ProjectReference Include="..\01_CafeRepo\01_CafeMenuRepo.csproj">
+      <Project>{02688cfa-9ca3-4cc8-85fa-bcee1cde3821}</Project>
+      <Name>01_CafeMenuRepo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
